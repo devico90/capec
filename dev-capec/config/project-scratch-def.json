@@ -1,0 +1,17 @@
+{
+    "orgName": "CAPEC",
+    "edition": "Enterprise",
+    "features": [],
+    "settings": {
+        "pathAssistantSettings": {
+            "pathAssistantEnabled": true
+        },
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "quoteSettings": {
+            "enableQuote": true
+        }
+    },
+    "language": "pt_BR"
+}
