@@ -162,7 +162,24 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Itens de Estoques</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <customTabListAdditionalFields>Estoque__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Produto__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Quantidade__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UnidadeMedida__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Fabricante__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DataValidade__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <searchResultsAdditionalFields>Estoque__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Produto__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DataValidade__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Quantidade__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UnidadeMedida__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
