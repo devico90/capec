@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#78AF50</headerColor>
+        <logo>logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Controle de Estoque</label>
+    <navType>Standard</navType>
+    <tabs>Estoque__c</tabs>
+    <tabs>ItemEstoque__c</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>undefined_UtilityBar</utilityBar>
+</CustomApplication>

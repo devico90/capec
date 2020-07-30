@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Family</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Perecível</fullName>
+                <default>false</default>
+                <label>Perecível</label>
+            </value>
+            <value>
+                <fullName>Não-perecível</fullName>
+                <default>false</default>
+                <label>Não-perecível</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Comida</controllingFieldValue>
+            <controllingFieldValue>Bebida</controllingFieldValue>
+            <valueName>Perecível</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comida</controllingFieldValue>
+            <controllingFieldValue>Bebida</controllingFieldValue>
+            <valueName>Não-perecível</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

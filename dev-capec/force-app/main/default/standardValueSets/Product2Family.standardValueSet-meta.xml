@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Comida</fullName>
+        <default>false</default>
+        <label>Comida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bebida</fullName>
+        <default>false</default>
+        <label>Bebida</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suplemento</fullName>
+        <default>false</default>
+        <label>Suplemento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dieta enteral</fullName>
+        <default>false</default>
+        <label>Dieta enteral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medicamento</fullName>
+        <default>false</default>
+        <label>Medicamento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cuidados gerais</fullName>
+        <default>false</default>
+        <label>Cuidados gerais</label>
+    </standardValue>
+</StandardValueSet>
