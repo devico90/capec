@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidacaoCNPJSomenteNumeros</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT(ISBLANK(CNPJ__c)),
+				NOT(ISNUMBER(CNPJ__c))
+)</errorConditionFormula>
+    <errorDisplayField>CNPJ__c</errorDisplayField>
+    <errorMessage>Digite somente números.</errorMessage>
+</ValidationRule>

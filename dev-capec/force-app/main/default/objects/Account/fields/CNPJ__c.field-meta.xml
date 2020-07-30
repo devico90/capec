@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CNPJ__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Somente números</inlineHelpText>
     <label>CNPJ</label>
     <length>255</length>
     <required>false</required>
