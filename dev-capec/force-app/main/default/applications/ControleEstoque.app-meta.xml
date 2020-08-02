@@ -14,6 +14,7 @@
     <navType>Standard</navType>
     <tabs>Estoque__c</tabs>
     <tabs>ItemEstoque__c</tabs>
+    <tabs>Entrada__c</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
