@@ -14,7 +14,7 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Quantidade__c</field>
             </layoutItems>
         </layoutColumns>
@@ -33,8 +33,8 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Produto__c</field>
+                <behavior>Required</behavior>
+                <field>Item_de_Estoque__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

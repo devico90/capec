@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fullName>ItensUnicos</fullName>
     <columns>NAME</columns>
     <columns>Doacao__c</columns>
-    <columns>Produto__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>RECORDTYPE</field>
         <operation>equals</operation>
-        <value>ItemDoacao__c.ItemUnico</value>
+        <value>ItemDoacao__c.Padrao</value>
     </filters>
     <label>Itens únicos</label>
 </ListView>
