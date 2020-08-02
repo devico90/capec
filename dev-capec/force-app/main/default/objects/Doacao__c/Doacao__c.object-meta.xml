@@ -162,7 +162,16 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Doações</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <searchResultsAdditionalFields>Assistido__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Tipo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Data__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
