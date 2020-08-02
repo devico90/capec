@@ -482,6 +482,10 @@
         <recordType>ItemEstoque__c.ItemUnico</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Product2.Padrao</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>CestaBasica__c</tab>
         <visibility>Visible</visibility>

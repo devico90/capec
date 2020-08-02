@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Padrao</fullName>
+    <active>true</active>
+    <label>Padrão</label>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>Bebida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuidados gerais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dieta enteral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suplemento</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo__c</picklist>
+        <values>
+            <fullName>Não-perecível</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perecível</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
