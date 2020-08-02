@@ -163,6 +163,8 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Itens de Estoques</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <customTabListAdditionalFields>Estoque__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Produto__c</customTabListAdditionalFields>

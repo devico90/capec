@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ItemUnico</fullName>
+    <active>true</active>
+    <label>Item único</label>
+    <picklistValues>
+        <picklist>UnidadeMedida__c</picklist>
+        <values>
+            <fullName>KG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantidade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
