@@ -12,11 +12,11 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>CestaBasica__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Quantidade__c</field>
             </layoutItems>
             <layoutItems>
@@ -30,7 +30,7 @@
                 <field>Estoque__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>DataValidade__c</field>
             </layoutItems>
             <layoutItems>

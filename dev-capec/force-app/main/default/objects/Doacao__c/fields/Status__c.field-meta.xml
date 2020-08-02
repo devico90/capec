@@ -14,7 +14,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Pedido solicitado</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Pedido solicitado</label>
             </value>
             <value>
