@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Entrada</fullName>
+    <fullName>Doacao</fullName>
     <active>true</active>
-    <label>Entrada</label>
+    <label>Doação</label>
 </RecordType>
