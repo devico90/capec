@@ -13,10 +13,10 @@
     <label>Controle de Estoque</label>
     <navType>Standard</navType>
     <tabs>Estoque__c</tabs>
-    <tabs>Entrada__c</tabs>
-    <tabs>Doacao__c</tabs>
     <tabs>CestaBasica__c</tabs>
     <tabs>standard-Product2</tabs>
+    <tabs>Entrada__c</tabs>
+    <tabs>Doacao__c</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>
