@@ -128,16 +128,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Entrada</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Entrada</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>true</allowInChatterGroups>
@@ -145,7 +151,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -158,10 +164,12 @@
     <nameField>
         <displayFormat>E-{000000}</displayFormat>
         <label>Entrada</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Entradas</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts>
         <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
