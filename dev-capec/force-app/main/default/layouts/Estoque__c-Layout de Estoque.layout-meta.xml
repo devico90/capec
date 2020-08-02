@@ -47,6 +47,7 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Produto__c</fields>
+        <fields>CestaBasica__c</fields>
         <fields>Quantidade__c</fields>
         <fields>UnidadeMedida__c</fields>
         <fields>Fabricante__c</fields>
