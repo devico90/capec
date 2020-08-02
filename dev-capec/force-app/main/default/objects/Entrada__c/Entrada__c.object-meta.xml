@@ -163,7 +163,18 @@
     </nameField>
     <pluralLabel>Entradas</pluralLabel>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts/>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Produto__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ContatoResponsavel__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Tipo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DataEntrada__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
