@@ -169,6 +169,8 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Itens de Doações</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
