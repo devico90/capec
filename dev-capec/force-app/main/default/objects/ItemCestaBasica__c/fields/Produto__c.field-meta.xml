@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>CestaBasica__c</fullName>
+    <fullName>Produto__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Cesta básica</label>
-    <referenceTo>CestaBasica__c</referenceTo>
-    <relationshipLabel>Doações</relationshipLabel>
-    <relationshipName>Doacoes</relationshipName>
+    <label>Produto</label>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Itens das Cestas Básicas</relationshipLabel>
+    <relationshipName>Itens</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
