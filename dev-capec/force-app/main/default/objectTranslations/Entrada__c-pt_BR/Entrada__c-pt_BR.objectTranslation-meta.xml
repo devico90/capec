@@ -2,11 +2,11 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Entrada e Saída</value>
+        <value>Entrada</value>
     </caseValues>
     <caseValues>
         <plural>true</plural>
-        <value>Entradas e Saídas</value>
+        <value>Entradas</value>
     </caseValues>
     <gender>Feminine</gender>
     <recordTypes>

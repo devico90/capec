@@ -154,13 +154,14 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <gender>Feminine</gender>
-    <label>Entrada e Saída</label>
+    <label>Entrada</label>
     <nameField>
-        <label>Nome</label>
+        <displayFormat>E-{000000}</displayFormat>
+        <label>Entrada</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Entradas e Saídas</pluralLabel>
+    <pluralLabel>Entradas</pluralLabel>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
