@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Doacao__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Doação</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Hora de analisar a solicitação e iniciar a montagem.&lt;/p&gt;</info>
+        <picklistValueName>Em análise</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Doação entregue com sucesso!&lt;/p&gt;</info>
+        <picklistValueName>Entregue</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Doação liberada! Agora é só entregar ao assistido.&lt;/p&gt;</info>
+        <picklistValueName>Liberada</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Selecione os itens, a partir da lista relacionada &lt;b&gt;ITENS&lt;/b&gt; localizada na parte inferior da página.&lt;/p&gt;</info>
+        <picklistValueName>Montagem</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Uma doação foi solicitada!&lt;/p&gt;</info>
+        <picklistValueName>Pedido solicitado</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
