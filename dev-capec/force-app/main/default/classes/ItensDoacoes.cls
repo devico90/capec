@@ -30,7 +30,7 @@ public with sharing class ItensDoacoes implements IItensDoacoes
         {
             Map<Id, Product2> cestasBasicas = new Map<Id, Product2>(ProductsSelector.getInstance().selectByCestaBasicaId(mapIdsCestasBasicasItensDoacoes.keySet()));
             Set<Id> produtosIds = getProdutosIds(cestasBasicas.values());
-            List<ItemEstoque__c> itensEstoques = [SELECT Id, Produto__c, Quantidade__c FROM ItemEstoque__c WHERE Produto__c IN :produtosIds];
+            List<ItemEstoque__c> itensEstoques = ItensEstoquesSelector.getInstance().selectByProduto(produtosIds);
             List<ItemDoacao__c> itens = new List<ItemDoacao__c>();
 
             for (ItemDoacao__c record : mapIdsCestasBasicasItensDoacoes.values())

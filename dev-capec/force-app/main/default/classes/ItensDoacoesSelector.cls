@@ -16,11 +16,21 @@ public without sharing class ItensDoacoesSelector
         return instance;
     }
 
+    public List<ItemDoacao__c> selectByDoacaoId(Set<Id> ids)
+    {
+        if (itens == null)
+        {
+            itens = [SELECT Id, Produto__c, Quantidade__c FROM ItemDoacao__c WHERE Doacao__c IN :ids];
+        }
+
+        return itens;
+    }
+
     public List<ItemDoacao__c> selectById(Set<Id> ids)
     {
         if (itens == null)
         {
-            itens = [SELECT Id FROM ItemDoacao__c WHERE Id IN :ids];
+            itens = [SELECT Id, Produto__c, Quantidade__c FROM ItemDoacao__c WHERE Id IN :ids];
         }
 
         return itens;
