@@ -2,7 +2,7 @@ public with sharing class ItensDoacoes implements IItensDoacoes
 {
 
     List<ItemDoacao__c> records;
-    Map<Id, ItemDoacao__c> mapRecords;
+    Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes;
 
     public ItensDoacoes(List<ItemDoacao__c> records) 
     {
@@ -14,27 +14,27 @@ public with sharing class ItensDoacoes implements IItensDoacoes
         return new ItensDoacoes(records);
     }
 
-    public ItensDoacoes(Map<Id, ItemDoacao__c> mapRecords) 
+    public ItensDoacoes(Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes) 
     {
-        this.mapRecords = mapRecords;
+        this.mapIdsCestasBasicasItensDoacoes = mapIdsCestasBasicasItensDoacoes;
     }
 
-    public static ItensDoacoes newInstance(Map<Id, ItemDoacao__c> mapRecords)
+    public static ItensDoacoes newInstance(Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes)
     {
-        return new ItensDoacoes(mapRecords);
+        return new ItensDoacoes(mapIdsCestasBasicasItensDoacoes);
     }
 
-    public List<ItemDoacao__c> createByCestaBasica(Set<Id> cestasBasicasIds)
+    public List<ItemDoacao__c> createByCestaBasica()
     {
-        if (!mapRecords.isEmpty())
+        if (!mapIdsCestasBasicasItensDoacoes.isEmpty())
         {
-            Map<Id, ItemCestaBasica__c> itensCestasBasicas = new Map<Id, ItemCestaBasica__c>(ItensCestasBasicasSelector.getInstance().selectByCestaBasicaId(cestasBasicasIds));
+            Map<Id, Product2> cestasBasicas = new Map<Id, Product2>(ProductsSelector.getInstance().selectByCestaBasicaId(mapIdsCestasBasicasItensDoacoes.keySet()));
             List<ItemDoacao__c> itens = new List<ItemDoacao__c>();
 
-            for (ItemDoacao__c record : records)
+            for (ItemDoacao__c record : mapIdsCestasBasicasItensDoacoes.values())
             {
-                Product2 produto = itensCestasBasicas.get(record.Produto__c);
-                itens.add(createRecord(record, produto));
+                System.debug('item doacao cesta básica: ' + record);
+                itens.addAll(createRecords(record, cestasBasicas.get(record.Produto__c)));
             }
             return itens;
         }
@@ -42,17 +42,28 @@ public with sharing class ItensDoacoes implements IItensDoacoes
         return null;
     }
 
-    private ItemDoacao__c createRecord(ItemDoacao__c cestaBasica, Product2 produto)
+    private List<ItemDoacao__c> createRecords(ItemDoacao__c cestaBasicaItemDoacao, Product2 cestaBasicaProduto)
     {
-        if (cestaBasica != null && produto != null)
+        System.debug('criar os registros...');
+        if (cestaBasicaItemDoacao != null && cestaBasicaProduto != null)
         {
-            ItemDoacao__c item = new ItemDoacao__c();
+            List<ItemDoacao__c> itensDoacoes = new List<ItemDoacao__c>();
+            List<ItemCestaBasica__c> itensCestaBasica = cestaBasicaProduto.Itens2__r;
+            System.debug('itens da cesta basica: ' + itensCestaBasica);
+
+            for (ItemCestaBasica__c itemCestaBasica : itensCestaBasica)
+            {
+                System.debug('item da cesta basica: ' + itemCestaBasica);
+                ItemDoacao__c item = new ItemDoacao__c();
     
-            item.Produto__c = produto.Id;
-            item.Quantidade__c = 1;
-            item.Doacao__c = cestaBasica.Doacao__c;
-    
-            return item;
+                item.Produto__c = itemCestaBasica.Item__c;
+                item.Quantidade__c = itemCestaBasica.Quantidade__c * cestaBasicaItemDoacao.Quantidade__c;
+                item.Doacao__c = cestaBasicaItemDoacao.Doacao__c;
+        
+                itensDoacoes.add(item);
+            }
+
+            return itensDoacoes;            
         }
 
         return null;

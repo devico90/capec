@@ -59,11 +59,16 @@
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
-        <excludeButtons>MassChangeOwner</excludeButtons>
         <fields>NAME</fields>
         <fields>Item__c</fields>
         <fields>Quantidade__c</fields>
         <relatedList>ItemCestaBasica__c.CestaBasica__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>MassChangeOwner</excludeButtons>
+        <fields>NAME</fields>
+        <fields>Quantidade__c</fields>
+        <relatedList>ItemCestaBasica__c.Item__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

@@ -13,6 +13,11 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+            <value>
                 <fullName>Pedido solicitado</fullName>
                 <default>true</default>
                 <label>Pedido solicitado</label>

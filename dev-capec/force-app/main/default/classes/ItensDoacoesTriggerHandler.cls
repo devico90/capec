@@ -2,26 +2,27 @@ public without sharing class ItensDoacoesTriggerHandler
 {    
     public static void handleAfterInsert(List<ItemDoacao__c> records)
     {
-        Map<Id, ItemDoacao__c> cestaBasicaItemDoacao = new Map<Id, ItemDoacao__c>();
+        Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes = new Map<Id, ItemDoacao__c>();
+        Set<Id> idsToExclude = new Set<Id>();
 
         for (ItemDoacao__c record : records)
         {
-            if (record.ProdutoRecordTypeId__c.equals(Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('CestaBasica').getRecordTypeId()))            
+            if (record.ProdutoRecordTypeId__c.equals(Schema.SObjectType.Product2.getRecordTypeInfosByDeveloperName().get('CestaBasica').getRecordTypeId()))            
             {
-                cestaBasicaItemDoacao.put(record.Produto__c, record);
+                mapIdsCestasBasicasItensDoacoes.put(record.Produto__c, record);
+                idsToExclude.add(record.Id);
             }
         }
-
-        handleAfterInsertCestasBasicas(cestaBasicaItemDoacao);
+        handleAfterInsertCestasBasicas(mapIdsCestasBasicasItensDoacoes, idsToExclude);
     }
 
-    public static void handleAfterInsertCestasBasicas(Map<Id, ItemDoacao__c> cestaBasicaItemDoacao)
+    public static void handleAfterInsertCestasBasicas(Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes, Set<Id> idsToExclude)
     {
-        if (!cestaBasicaItemDoacao.isEmpty())
+        if (!mapIdsCestasBasicasItensDoacoes.isEmpty())
         {
-            insert ItensDoacoes.newInstance(cestaBasicaItemDoacao.values()).createByCestaBasica(cestaBasicaItemDoacao.keySet());
-        }
+            insert ItensDoacoes.newInstance(mapIdsCestasBasicasItensDoacoes).createByCestaBasica();
 
-        delete cestaBasicaItemDoacao.values();
+            System.enqueueJob(new ExcluirItensDoacoesQueueable(idsToExclude));
+        }
     }
 }
