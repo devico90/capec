@@ -1,5 +1,5 @@
 public without sharing class ItensDoacoesTriggerHandler
-{    
+{
     public static void handleAfterInsert(List<ItemDoacao__c> records)
     {
         Map<Id, ItemDoacao__c> mapIdsCestasBasicasItensDoacoes = new Map<Id, ItemDoacao__c>();
