@@ -174,9 +174,9 @@
         <customTabListAdditionalFields>DataValidade__c</customTabListAdditionalFields>
         <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
         <excludedStandardButtons>Accept</excludedStandardButtons>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
-        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
         <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <searchResultsAdditionalFields>Estoque__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Produto__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>DataValidade__c</searchResultsAdditionalFields>

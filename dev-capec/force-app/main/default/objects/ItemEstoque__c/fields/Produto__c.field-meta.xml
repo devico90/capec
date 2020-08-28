@@ -4,15 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>Produto</label>
-    <lookupFilter>
-        <active>true</active>
-        <filterItems>
-            <field>Product2.IsActive</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </filterItems>
-        <isOptional>false</isOptional>
-    </lookupFilter>
     <referenceTo>Product2</referenceTo>
     <relationshipLabel>Itens de Estoques</relationshipLabel>
     <relationshipName>ItensEstoques</relationshipName>
