@@ -301,11 +301,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>ItemDoacao__c.ItemCestaBasica__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>ItemDoacao__c.ProdutoRecordTypeId__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -522,6 +517,10 @@
     </tabSettings>
     <tabSettings>
         <tab>Estoque__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Home</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
