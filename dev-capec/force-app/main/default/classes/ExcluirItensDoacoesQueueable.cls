@@ -12,4 +12,3 @@ public without sharing class ExcluirItensDoacoesQueueable implements Queueable
         delete ItensDoacoesSelector.getInstance().selectById(ids);
     }
 }
-

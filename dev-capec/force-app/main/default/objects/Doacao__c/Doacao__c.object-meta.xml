@@ -172,9 +172,9 @@
     <searchLayouts>
         <excludedStandardButtons>Accept</excludedStandardButtons>
         <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
-        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
         <searchResultsAdditionalFields>Assistido__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Tipo__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Data__c</searchResultsAdditionalFields>
