@@ -64,12 +64,15 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+    <tabs>Home</tabs>
     <tabs>Estoque__c</tabs>
     <tabs>standard-Product2</tabs>
     <tabs>Entrada__c</tabs>
     <tabs>Doacao__c</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>undefined_UtilityBar</utilityBar>
 </CustomApplication>
