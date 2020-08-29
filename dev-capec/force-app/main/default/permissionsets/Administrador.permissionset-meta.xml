@@ -286,6 +286,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Entrada__c.Valor__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ItemCestaBasica__c.CestaBasica__c</field>
         <readable>true</readable>
     </fieldPermissions>
