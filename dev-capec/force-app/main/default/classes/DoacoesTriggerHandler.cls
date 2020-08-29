@@ -17,18 +17,21 @@ public without sharing class DoacoesTriggerHandler
 
     public static void handleAfterUpdateEstoque(Set<Id> idsDoacoes)
     {
-        List<ItemDoacao__c> itensDoacoes = ItensDoacoesSelector.getInstance().selectByDoacaoId(idsDoacoes);
-        Set<Id> idsProdutos = new Set<Id>();
-
-        for (ItemDoacao__c item : itensDoacoes)
+        if (!idsDoacoes.isEmpty())
         {
-            idsProdutos.add(item.Produto__c);
+            List<ItemDoacao__c> itensDoacoes = ItensDoacoesSelector.getInstance().selectByDoacaoId(idsDoacoes);
+            Set<Id> idsProdutos = new Set<Id>();
+    
+            for (ItemDoacao__c item : itensDoacoes)
+            {
+                idsProdutos.add(item.Produto__c);
+            }
+    
+            List<ItemEstoque__c> itens = ItensEstoquesSelector.selectByProduto(idsProdutos);
+    
+            ItensEstoques ies = ItensEstoques.newInstance(itens);
+            ies.devolveQuantidade(itensDoacoes);
+            update ies.records;
         }
-
-        List<ItemEstoque__c> itens = ItensEstoquesSelector.getInstance().selectByProduto(idsProdutos);
-
-        ItensEstoques ies = ItensEstoques.newInstance(itens);
-        ies.devolveQuantidade(itensDoacoes);
-        update ies.records;
     }
 }
