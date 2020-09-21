@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EntradaFornecedor</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &apos;EntradaCompra&apos;,
+				ISPICKVAL(TipoEntrada__c, &apos;Com NF&apos;),
+				ISBLANK(Fornecedor__c)
+)</errorConditionFormula>
+    <errorDisplayField>Fornecedor__c</errorDisplayField>
+    <errorMessage>Preencha esse campo.</errorMessage>
+</ValidationRule>
