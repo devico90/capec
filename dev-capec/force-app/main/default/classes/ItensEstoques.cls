@@ -12,6 +12,11 @@ public without sharing class ItensEstoques implements IItensEstoques
         return new ItensEstoques(records);
     }
 
+    public static ItensEstoques newInstance()
+    {
+        return new ItensEstoques(new List<ItemEstoque__c>());
+    }
+
     public void devolveQuantidade(List<ItemDoacao__c> itens)
     {
         for (ItemDoacao__c itemDoacao : itens)
@@ -35,22 +40,17 @@ public without sharing class ItensEstoques implements IItensEstoques
     {
         for (ItemDoacao__c itemDoacao : itensDoacoes)
         {
-            System.debug('item doacao: ' + itemDoacao);
             Decimal totalDoacao = itemDoacao.Quantidade__c;
             for (ItemEstoque__c itemEstoque : records)
             {
-                System.debug('item estqoue avaliado: ' + itemEstoque);
                 if (itemDoacao.Produto__c.equals(itemEstoque.Produto__c))
                 {
-                    System.debug('item de estoque deu match com item de doação');
-                    System.debug('totaldoacao: ' + totalDoacao);
                     if (totalDoacao == 0)
                     {
                         break;
                     }
                     else
                     {
-                        System.debug('qtd em estoque: ' + itemEstoque.Quantidade__c);
                         if (totalDoacao <= itemEstoque.Quantidade__c)
                         {
                             itemEstoque.Quantidade__c -= totalDoacao;
@@ -63,7 +63,6 @@ public without sharing class ItensEstoques implements IItensEstoques
                             itemEstoque.Quantidade__c = 0;                        
                         }  
                         
-                        system.debug('total doacao foi pra: ' + totalDoacao);
                     }
                 }
                 
@@ -108,6 +107,20 @@ public without sharing class ItensEstoques implements IItensEstoques
                 }
             }
         }  
+    }
+
+    public ItemEstoque__c createByMovimentacaoEntrada(Movimentacao__c record)
+    {
+        if  (record == null)
+        {
+            return null;
+        }
+
+        return new ItemEstoque__c(
+            Estoque__c = record.Estoque__c,
+            Produto__c = record.Produto__c,
+            Quantidade__c = record.Quantidade__c
+        );
     }
 
 }
