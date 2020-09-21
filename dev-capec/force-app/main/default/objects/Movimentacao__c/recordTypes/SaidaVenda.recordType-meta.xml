@@ -3,4 +3,19 @@
     <fullName>SaidaVenda</fullName>
     <active>true</active>
     <label>Saída - Venda</label>
+    <picklistValues>
+        <picklist>TipoEntrada__c</picklist>
+        <values>
+            <fullName>Anônima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Com NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem NF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>

@@ -3,4 +3,19 @@
     <fullName>EntradaCompra</fullName>
     <active>true</active>
     <label>Entrada - Compra</label>
+    <picklistValues>
+        <picklist>TipoEntrada__c</picklist>
+        <values>
+            <fullName>Anônima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Com NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem NF</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>
