@@ -37,7 +37,7 @@ public with sharing class MovimentacoesTriggerHandler
     {
         for (PricebookEntry pbEntry : pbEntries)
         {
-            if (record.Produto__c.equals(pbEntry.Product2Id))
+            if (record.Produto__c.equals(pbEntry.Product2Id) && record.Valor__c == null)
             {
                 record.Valor__c = pbEntry.UnitPrice;
                 break;
