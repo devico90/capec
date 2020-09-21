@@ -23,6 +23,10 @@
                 <behavior>Required</behavior>
                 <field>Quantidade__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Estoque__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
